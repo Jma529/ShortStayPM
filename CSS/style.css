@@ -1,0 +1,158 @@
+
+body {
+    background-color: #DCDCDD;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-size: 16px;
+
+    
+}
+
+.container {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+h1 {
+    
+    text-transform: uppercase;
+    color: #001242;
+
+}
+
+h1, h2, nav  {
+font-family: 'Muli', sans-serif;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #fefefe;
+}
+
+header {
+    padding: 1em;
+    overflow: hidden;
+    background-color: #001242;
+    opacity: .8;
+    
+}
+
+ul li a {
+    color: #fefefe;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+}
+
+nav ul li {
+    list-style: none;
+    
+}
+.main-nav {
+    display: none;
+}
+
+/* Mobile Nav */
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+    z-index: 10;
+  }
+
+  .active {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    opacity: .6;
+    width: 50%;
+    text-align: left;
+  }
+  
+  @media screen and (min-width: 650px) {
+    
+    .main-nav {
+      display: flex;
+      margin-right: 30px;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  
+    .main-nav li {
+      margin: 0;
+    }
+  
+    .nav-links {
+      margin-left: 40px;
+    }
+  
+    .logo {
+      margin-top: 0;
+    }
+  
+    .navbar-toggle {
+      display: none;
+    }
+
+    h1 {
+      font-size: 3em;
+    }
+  
+  }
+
+.banner {
+    background-image: url("Images/background-sample.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.title {
+    margin: 15px;
+}
+
+.logo {
+    font-weight: bold;
+    color: #fefefe;
+}
+
+.button {
+    border: #001242 solid 1px;
+    padding: 20px 30px;
+    color: #fefefe;
+    margin: 15px;
+}
+
+.button:hover{
+    background-color: #001242;
+}
+

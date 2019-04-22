@@ -4,38 +4,48 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Short Stay Property Management</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <script src="main.js"></script>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Muli" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
 </head>
 
 <body>
     <div class="container">
         <div class="banner">
             <header>
-                <nav>
+                <nav class="nav">
+                    <span class="navbar-toggle" id="js-navbar-toggle">
+                        <i class="fa fa-bars"></i>
+                    </span>
                     <div class="logo">Short Stay PM</div>
-                    <ul>
-                        <li>Why Short Stay?</li>
-                        <li>How it works</li>
-                        <li>Pricing</li>
-                        <li>FAQs</li>
-                        <li>Blog</li>
-                        <li>Contact</li>
+                    <ul class="main-nav" id="js-menu">
+                        <li><a href="why.html" class="nav-links">Why Short Stay?</a></li>
+                        <li><a href="how.html" class="nav-links">How it works</a></li>
+                        <li><a href="pricing.html" class="nav-links">Pricing</a></li>
+                        <li><a href="FAQs.html" class="nav-links">FAQs</a></li>
+                        <li><a href="blog.html" class="nav-links">Blog</a></li>
+                        <li><a href="contact.html" class="nav-links">Contact</a></li>
                     </ul>
                 </nav>
             </header>
             <div class="banner-text">
-                <h1>Short Stay Property Management</h1>
-                <h2>Better rental returns for property owners</h2>
-                <a href="#">See how it works</a>
+                <h1 class="title">Short Stay Property Management</h1>
+                <h2 class="title">Better rental returns for property owners</h2>
+                <a href="how.html" class="button" id="how">See how it works</a>
             </div>
-            
-
         </div>
+
     </div>
+
 </body>
+<script src="main.js"></script>
 
 </html>
