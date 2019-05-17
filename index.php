@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="wrapper">
         <div class="banner">
             <header>
                 <nav class="nav">
@@ -42,6 +42,13 @@
                 <a href="how.html" class="button" id="how">See how it works</a>
             </div>
         </div>
+        <div class="value-form">
+            <h2>Discover the Short-let value of your property</h2>
+            <?php include('form.php');
+            ?>
+        </div>
+        <div class=""
+
 
     </div>
 
