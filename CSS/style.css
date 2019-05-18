@@ -20,9 +20,14 @@ body {
 h1 {
   text-transform: uppercase;
   color: #001242;
+  text-align: center;
 }
 
-h1, h2, h3, h4, h5 nav {
+h1,
+h2,
+h3,
+h4,
+h5 nav {
   font-family: "Muli", sans-serif;
   color: #001242;
 }
@@ -43,9 +48,25 @@ ul li a {
   color: #fefefe;
 }
 
+li {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.column {
+  width: 50%;
+  height: auto;
+  margin: 0 10px;
 }
 
 /* Nav menu */
@@ -181,6 +202,73 @@ nav ul li {
   background-color: #001242;
 }
 
+/* Dotpoints */
+#dotpoints {
+  max-width: 100%;
+  text-align: center;
+  height: auto;
+}
+
+.box {
+  margin: 50px auto;
+  height: 25vh;
+  border: 2px orange dotted;
+}
+
+.box h3 {
+  margin-bottom: 2r0px;
+}
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.icons .icon {
+  width: 75%;
+  height: 30px;
+  margin: 5px;
+}
+
+.box i {
+  font-size: 3em;
+}
+
+i {
+  color: black;
+}
+
+/* Items */
+.items ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+.items ul li {
+  font-size: 1.5em;
+}
+
+.items ul li:nth-child(even) {
+  color: darkblue;
+}
+
 @media screen and (min-width: 725px) {
   /* Main Nav-bar */
   .main-nav {
@@ -232,6 +320,26 @@ nav ul li {
   .value-form .button {
     width: 25%;
     margin: 0 20px;
+  }
+  .box {
+    margin: 20px auto;
+  }
+  .icons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .icons .icon {
+    width: 25%;
+    margin: 10px;
+  }
+  .research {
+    max-width: 75%;
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=style.css.map */

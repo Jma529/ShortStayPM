@@ -1,5 +1,5 @@
 <?php
-  require_once "form.php"; 
+  // require_once "Mail.php"; 
 
   $host = "email-smtp.us-west-2.amazonaws.com"; 
   $username = "AKIA2FPQZOR6QHBKGTXN"; 
@@ -15,20 +15,18 @@
 
   if(isset($_POST["submit"])) {
 
-    $recipient="hello@danielboterhoven.tech";
-    $subject="CV message";
-    $senderName=test_input($_POST["senderName"]);
-    $senderCompany=test_input($_POST["senderCompany"]);
-    $senderEmail=test_input($_POST["senderEmail"]);
-    $senderBedrooms=test_input($_POST["senderPhone"]);
-    $message=test_input($_POST["message"]);
+    $recipient="jma529@gmail.com";
+    $subject="Find my Short-let Value";
+    $senderAddress=test_input($_POST["address"]);
+    $senderEmail=test_input($_POST["email"]);
+    $senderBedrooms=test_input($_POST["bedrooms"]);
 
     // Validate form
-    if(empty($senderName)||empty($senderCompany)||empty($senderEmail)||empty($senderPhone)||empty($message)) {
-        echo "Your name, company, email, contact number and message are required";
+    if(empty($senderAddress)||empty($senderEmail)||empty($senderBedrooms)) {
+        echo "Please fill in in all fields";
         exit;
     }
-    $mailBody='Name: '.$senderName.'\nCompany: '.$senderCompany.'\nEmail: '.$senderEmail.'\nPhone: '.$senderPhone.'\n\n'.$message;
+    $mailBody='Email: '.$senderEmail.'\nAddress: '.$senderAddress.'\nNumber of Bedrooms: '.$senderBedrooms.'\n\n';
 
     
     $headers = array ('From' => $senderEmail, 'To' => $recipient, 'Subject' => $subject);
