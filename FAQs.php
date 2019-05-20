@@ -1,4 +1,4 @@
-<?php includes('head.php');
-    includes('navbar.php');
+<?php include 'head.php';
+    include 'navbar.php';
 ?>
 

@@ -1,7 +1,8 @@
 
 
 
-
+<?php include'head.php';
+?>
 
 <form method="post" action="form_submission.php">
                 <input name="address" type="text" placeholder="enter address" id="address" required>
