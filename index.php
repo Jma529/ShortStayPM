@@ -36,40 +36,45 @@
                 <h2 class="title">Better rental returns for property owners</h2>
                 <a href="how.html" class="button" id="how">See how it works</a>
             </div>
-        </div>
-        <div class="container">
-            <div class="value-form">
-                <h2>Discover the Short-let value of your property</h2>
-                <?php include 'form.php';
-            ?>
-            </div>
-            <div class="flex" id="dotpoints">
-                <div class="column one">
-                    <h2>Maximum <br>Return</h2>
-                    <div class="box bookings">
-                        <div class="icons">
+            <div class="value-form value-form--banner">
+                    <h2>Discover the Short-let value of your property</h2>
+                    <?php include 'form.php';
+                ?>
+                </div>
+            <!-- <div class="icons">
                             <img class="icon" src="CSS/Images/bookinglogonew.png">
                             <img class="icon" src="CSS/Images/airbnb.png">
                             <img class="icon" src="CSS/Images/home_away.png">
-                        </div>
+                        </div> -->
+            </div>
+        <div class="container">
+
+           
+            <div class="flex" id="dotpoints">
+                <!-- <h2>Maximum <br>Return</h2> -->
+                <!-- <div class="box bookings">
+                    
                         <h3>Multiple booking sites</h3>
-                    </div>
-                    <div class="box flexibility">
-                        <img src="CSS/Images/calendar.png">
-                        <h3>Complete flexibility</h3>
-                    </div>
+                    </div> -->
+                <div class="box flexibility">
+                    <img src="CSS/Images/calendar.png">
+                    <h3>Complete flexibility</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, nostrum?</p>
                 </div>
-                <div class="column two">
-                    <h2>Minimum <br>Risk</h2>
-                    <div class="box screening">
-                        <img src="CSS/Images/search.png">
-                        <h3>Guest Screening</h3>
-                    </div>
-                    <div class="box cleaning">
-                        <img src="CSS/Images/vacuum.png">
-                        <h3>Cleaning, laundry, keys, check-in/out</h3>
-                    </div>
+
+                <!-- <div class="column two"> -->
+                <!-- <h2>Minimum <br>Risk</h2> -->
+                <div class="box screening">
+                    <img src="CSS/Images/search.png">
+                    <h3>Guest Screening</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, nostrum?</p>
                 </div>
+                <div class="box cleaning">
+                    <img src="CSS/Images/vacuum.png">
+                    <h3>Cleaning, laundry, keys, check-in/out</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, nostrum?</p>
+                </div>
+                <!-- </div> -->
             </div>
             <div class="items">
                 <h1>We manage it all...</h1>
@@ -97,19 +102,19 @@
                         <p>Earn more than traditional, long-term tenancies</p>
                     </div>
                 </div>
-                </div>
-
-
-
-
             </div>
 
 
 
 
-            <?php include'footer.php'
-    ?>
         </div>
+
+
+
+
+        <?php include'footer.php'
+    ?>
+    </div>
 
 
 </body>

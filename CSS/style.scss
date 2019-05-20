@@ -1,5 +1,6 @@
 $primary-color: #001242;
 $secondary-color: #FF5A5F;
+$main-background: #f2e6ca;
 $body-font: 'Montserrat',
 sans-serif;
 $header-font: 'Muli',
@@ -10,7 +11,7 @@ sans-serif;
 }
 
 body {
-  background-color: #DCDCDD;
+  background-color: $main-background;
   font-family: $body-font;
   max-width: 100%;
   overflow-x: hidden;
@@ -137,6 +138,7 @@ nav ul li {
   background-size: cover;
   background-position: center;
   text-align: center;
+ height: auto;
 }
 
 .banner-text {
@@ -222,6 +224,8 @@ nav ul li {
   text-align: center;
   height: auto;
 
+
+
   h2 {
     background-color: $primary-color;
     color: white;
@@ -234,6 +238,8 @@ nav ul li {
 .box {
   margin: 50px auto;
   height: 25vh;
+ 
+  
 }
 
   h3 {
@@ -242,11 +248,15 @@ nav ul li {
 
 .icons {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  background-color: white;
+  opacity: .6;
+  position: absolute;
+  top: 75vh;
+  
 
   .icon {
-    width: 75%;
+    width: 25%;
     height: 30px;
     margin: 5px;
   }
@@ -280,7 +290,12 @@ nav ul li {
 }
 
 @media screen and (min-width: 725px) {
-
+  .banner {
+    height: 100vh;
+  }
+  .banner-text {
+    height: 70vh;
+  }
   /* Main Nav-bar */
 
   .nav {
@@ -325,7 +340,7 @@ nav ul li {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-      width: 100%;
+      width: 75%;
     }
 
     input {
@@ -334,15 +349,27 @@ nav ul li {
 
     .button {
       width: 25%;
-      margin: 0 20px;
+      margin: 5px 20px;
+      border: 1px solid white;
     }
+  }
+  .value-form--banner {
+      position: absolute;
+      top: 80vh;
+      width: 100%;
+      background-color: $primary-color;
+      opacity: .8;
   }
   .box {
     margin: 20px auto;
+    width: 33%;
+    height: auto;
   }
   .icons {
 
-      justify-content: center;
+      top: 72vh;
+      width: 100%;
+  }
 
     .icon {
       width: 25%;
@@ -353,5 +380,5 @@ nav ul li {
     max-width: 75%;
     margin: 0 auto;
   }
-}
+
 
