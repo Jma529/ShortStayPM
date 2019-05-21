@@ -10,6 +10,11 @@
                 <button type="submit" name="submit" class="button button--secondarycolor">Enquire Now!</button>
             </form>
 </div>
+<ul class="main-nav nav-footer">
+    <li><a href="about.php" class="nav-links">About</a></li>
+    <li><a href="pricing.php" class="nav-links">Pricing</a></li>
+    <li><a href="blog.php" class="nav-links">Blog</a></li>
+</ul>
 
 </footer>
 

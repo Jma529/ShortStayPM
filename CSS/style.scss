@@ -3,8 +3,7 @@ $secondary-color: #FF5A5F;
 $main-background: #f2e6ca;
 $body-font: 'Montserrat',
 sans-serif;
-$header-font: 'Muli',
-sans-serif;
+$header-font: 'Asap', sans-serif;
 
 * {
   box-sizing: border-box;
@@ -47,6 +46,8 @@ header {
   overflow: hidden;
   background-color: $primary-color;
   opacity: .8;
+  width: 100%;
+  position: fixed;
 
 }
 
@@ -58,7 +59,6 @@ header {
 ul li a {
   color: #fefefe;
 }
-
 li {
   list-style: none;
 }
@@ -77,12 +77,16 @@ a {
   width: 50%;
   height: auto;
   margin: 0 10px;
+  display: flex;
 }
 
 .container {
   max-width: 85%;
   margin: 0 auto;
 }
+
+
+
 /* Nav menu */
 .nav {
 
@@ -139,6 +143,10 @@ nav ul li {
   background-position: center;
   text-align: center;
  height: auto;
+ position: relative;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
 }
 
 .banner-text {
@@ -152,7 +160,7 @@ nav ul li {
 
 .banner h2 {
   font-size: 1.5em;
-  color: #fefefe;
+
 }
 
 .title {
@@ -205,7 +213,6 @@ nav ul li {
   .button {
     width: 50%;
     margin: 0 auto;
-    background-color: $primary-color;
     font-size: 1em;
   }
 
@@ -226,20 +233,30 @@ nav ul li {
 
 
 
-  h2 {
-    background-color: $primary-color;
-    color: white;
-  }
-  h2:nth-last-child(){
-    background-color: white;
-    color: $primary-color;
-  }
+  // h2 {
+  //   background-color: $primary-color;
+  //   color: white;
+  // }
+  // h2:nth-last-child(){
+  //   background-color: white;
+  //   color: $primary-color;
+  // }
+}
+
+.row {
+  flex-direction: column;
 }
 .box {
-  margin: 50px auto;
-  height: 25vh;
- 
+  margin: 20px auto;
+  height: auto;
   
+  img {
+    width: 50px;
+  }
+ 
+  hr {
+  background-color: black;
+  }
 }
 
   h3 {
@@ -271,7 +288,13 @@ nav ul li {
 
 .items {
 
+  .list-items {
+    display: block;
+  }
  
+  h1 {
+    color: $primary-color;
+  }
 
   ul {
     display: flex;
@@ -280,7 +303,7 @@ nav ul li {
     margin: 0;
   }
   ul li {
-    font-size: 1.5em;
+  
     color: $primary-color;
   }
   ul li:nth-child(even) {
@@ -288,6 +311,7 @@ nav ul li {
      
   }
 }
+
 
 @media screen and (min-width: 725px) {
   .banner {
@@ -324,6 +348,7 @@ nav ul li {
 
   .logo {
     margin-top: 0;
+    font-size: 1.5em;
   }
 
   .navbar-toggle {
@@ -360,10 +385,16 @@ nav ul li {
       background-color: $primary-color;
       opacity: .8;
   }
-  .box {
-    margin: 20px auto;
-    width: 33%;
-    height: auto;
+  .row {
+    flex-direction: row;
+  }
+
+.box {
+
+ img {
+    width: 80px;
+  }
+
   }
   .icons {
 
@@ -375,10 +406,52 @@ nav ul li {
       width: 25%;
       margin: 10px;
     }
-  }
   .research {
     max-width: 75%;
     margin: 0 auto;
   }
+.items {
+  margin: 50px 0;
+  height: 660px;
+  justify-content: center;
+    
+    img {
+      width: 40%;
+      height: 400px;
+    }
+
+    ul {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+}
+
+.list-items {
+  flex-direction: column;
+}
+}
+/*footer */ 
+footer {
+padding: 50px;
+background-color: $primary-color;
+height: 200px;
+
+.nav-links {
+  margin: 40px;
+}
+
+.nav-footer {
+  justify-content: center;
+  margin: 50px auto;
+}
+}
 
 
+@media screen and (min-width: 550px){
+  .box {
+    margin: 20px auto;
+    width: 33%;  
+    padding: 20px;
+}
+}

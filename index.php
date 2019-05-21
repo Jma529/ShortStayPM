@@ -7,6 +7,7 @@
     <title>Short Stay Property Management</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Muli" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="CSS/style.css">
@@ -50,15 +51,18 @@
         <div class="container">
 
            
-            <div class="flex" id="dotpoints">
+            <div id="dotpoints">
+            <h2>Minimum Risk...Maximum Return</h2>
                 <!-- <h2>Maximum <br>Return</h2> -->
                 <!-- <div class="box bookings">
                     
                         <h3>Multiple booking sites</h3>
                     </div> -->
-                <div class="box flexibility">
+                <div class="flex row">
+                    <div class="box flexibility">
                     <img src="CSS/Images/calendar.png">
                     <h3>Complete flexibility</h3>
+                    <hr style="width:90%">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, nostrum?</p>
                 </div>
 
@@ -67,18 +71,25 @@
                 <div class="box screening">
                     <img src="CSS/Images/search.png">
                     <h3>Guest Screening</h3>
+                    <hr style="width:90%">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, nostrum?</p>
                 </div>
                 <div class="box cleaning">
                     <img src="CSS/Images/vacuum.png">
                     <h3>Cleaning, laundry, keys, check-in/out</h3>
+                    <hr style="width:90%">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, nostrum?</p>
                 </div>
+                </div>
+                <button class="button button--secondarycolor">Learn More</button>
                 <!-- </div> -->
             </div>
-            <div class="items">
+        </div>
+            <div class="items flex">
+                <img src="CSS/Images/we-manage-it-all.jpg">
+                <div class="list-items">
                 <h1>We manage it all...</h1>
-                <div class="list-items flex">
+               
                     <ul class="column">
                         <li>Market research</li>
                         <li>Property price mananagement</li>
@@ -106,12 +117,6 @@
 
 
 
-
-        </div>
-
-
-
-
         <?php include'footer.php'
     ?>
     </div>
@@ -119,9 +124,10 @@
 
 </body>
 
-<script src="https://code.jquery.com/jquery-3.4.0.min.js"
-    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous">
-</script>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.slim.js"
+  integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
+  crossorigin="anonymous"></script>
 <script src="main.js"></script>
 
 </html>
