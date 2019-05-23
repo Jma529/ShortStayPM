@@ -1,5 +1,13 @@
 <?php
-  // require_once "Mail.php"; 
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+//  try {
+  require_once "Mail.php";
+ 
+// } 
+// catch (Exception $ex) {
+//   echo $ex->getMessage();
+// }
 
   $host = "email-smtp.us-west-2.amazonaws.com"; 
   $username = "AKIA2FPQZOR6QHBKGTXN"; 
@@ -30,9 +38,9 @@
 
     
     $headers = array ('From' => $senderEmail, 'To' => $recipient, 'Subject' => $subject);
-    $smtp = Mail::factory('smtp', array ('host' => $host, 'auth' => true, 'username' => $username, 'password' => $password));
+    $smtp = Mail::factory('smtp', array ('debug'=>true,'host' => $host, 'auth' => true, 'username' => $username, 'password' => $password));
     $mail = $smtp->send($recipient, $headers, $mailBody);
-
+ 
     if (PEAR::isError($mail)) {
       $thankYou="Your email has not been sent, try again.";
     } else {
